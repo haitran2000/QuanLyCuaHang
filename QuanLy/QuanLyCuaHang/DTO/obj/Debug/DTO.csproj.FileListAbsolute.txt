@@ -1,0 +1,4 @@
+C:\Users\H\Desktop\Đồ Án Windows Form\Demo\QuanLyCuaHang\DTO\bin\Debug\DTO.dll
+C:\Users\H\Desktop\Đồ Án Windows Form\Demo\QuanLyCuaHang\DTO\bin\Debug\DTO.pdb
+C:\Users\H\Desktop\Đồ Án Windows Form\Demo\QuanLyCuaHang\DTO\obj\Debug\DTO.dll
+C:\Users\H\Desktop\Đồ Án Windows Form\Demo\QuanLyCuaHang\DTO\obj\Debug\DTO.pdb
