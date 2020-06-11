@@ -10,7 +10,7 @@ namespace DAO
 {
     class DataProvider
     {
-        public static string chuoiKetNoi = @"Data Source=TRANDUCHAI\HAITRAN;Initial Catalog=QuanLyCuaHang2;Integrated Security=True";
+        public static string chuoiKetNoi = @"Data Source=TRANDUCHAI\HAITRAN;Initial Catalog=QuanLyCuaHang;Integrated Security=True";
         public static SqlConnection TaoKetNoi()
         {
                 SqlConnection con = new SqlConnection(chuoiKetNoi);

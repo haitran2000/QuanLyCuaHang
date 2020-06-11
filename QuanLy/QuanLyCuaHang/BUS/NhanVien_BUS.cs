@@ -27,5 +27,11 @@ namespace BUS
             NhanVien_DAO objNV_DAO = new NhanVien_DAO();
             objNV_DAO.SuaNV(maNV,tenNV,gioiTinh,ngaySinh,sDT,diaChi,queQuan);
         }
+        public void ThemNV(string maNV, string tenNV, string gioiTinh, DateTime ngaySinh, string sDT, string diaChi, string queQuan)
+        {
+            // gọi xóa từ DAO
+            NhanVien_DAO objNV_DAO = new NhanVien_DAO();
+            objNV_DAO.ThemNV(maNV, tenNV, gioiTinh, ngaySinh, sDT, diaChi, queQuan);
+        }
     }
 }

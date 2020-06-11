@@ -89,7 +89,30 @@ namespace DAO
                 SqlCommand cmd = new SqlCommand();
                 //"DELETE FROM FC WHERE FCName = 'Chelsea'"
 
-                cmd.CommandText = string.Format("UPDATE [dbo].[NHANVIEN] SET TENNV=N'{0}' ,GIOITINH=N'{1}', NGAYSINH='{2}',SDT='{3}',DIACHI=N'{4}',QUEQUAN=N'{5}' WHERE MANV =N'{6}'", tenNV,gioiTinh,ngaySinh,sDT,diaChi,queQuan,maNV);
+                cmd.CommandText = string.Format("UPDATE [dbo].[NHANVIEN] SET TENNV=N'{0}' ,GIOITINH=N'{1}', NGAYSINH='{2}',SDT='{3}',DIACHI=N'{4}',QUEQUAN=N'{5}' WHERE MANV =N'{6}'", tenNV, gioiTinh, ngaySinh.ToString("MM/dd/yyyy h:mm:ss tt"), sDT, diaChi, queQuan, maNV);
+                cmd.Connection = conn;
+                // 4. thực thi cmd và xử lý kết quả
+                cmd.ExecuteNonQuery();
+
+            }
+            finally
+            {
+                // 5. đóng kết nối
+                conn.Close();
+
+            }
+        }
+        public void ThemNV(string maNV, string tenNV, string gioiTinh, DateTime ngaySinh, string sDT, string diaChi, string queQuan)
+        {
+            // 1. Tạo đối tượng kết nối
+            SqlConnection conn = DataProvider.TaoKetNoi();
+            try
+            {
+                // 3. tạo đối tượng command
+                SqlCommand cmd = new SqlCommand();
+                //"DELETE FROM FC WHERE FCName = 'Chelsea'"
+
+                cmd.CommandText = string.Format("INSERT [dbo].[NHANVIEN](MANV,TENNV,GIOITINH,NGAYSINH,SDT,DIACHI,QUEQUAN) VALUES('{0}',N'{1}',N'{2}','{3}','{4}',N'{5}',N'{6}') " ,maNV, tenNV, gioiTinh, ngaySinh.ToString("MM/dd/yyyy h:mm:ss tt"), sDT, diaChi, queQuan);
                 cmd.Connection = conn;
                 // 4. thực thi cmd và xử lý kết quả
                 cmd.ExecuteNonQuery();

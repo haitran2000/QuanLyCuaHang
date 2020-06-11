@@ -61,7 +61,7 @@ namespace QuanLyCuaHang
                 textMaNV.Text = item.Cells["MANV"].Value.ToString();
                 textTenNV.Text = item.Cells["TENNV"].Value.ToString();
                 textGT.Text = item.Cells["GIOITINH"].Value.ToString();
-                dateNgaySinh.EditValue = DateTime.ParseExact(item.Cells["NgaySinh"].Value.ToString(), "d/M/yyyy h:mm:ss tt", CultureInfo.InvariantCulture);
+                dateNgaySinh.EditValue = DateTime.ParseExact(item.Cells["NgaySinh"].Value.ToString(), "dd/MM/yyyy h:mm:ss tt", CultureInfo.InvariantCulture);
                 textDiaChi.Text = item.Cells["DIACHI"].Value.ToString();
                 textQueQuan.Text = item.Cells["QUEQUAN"].Value.ToString();
                 textSDT.Text = item.Cells["SDT"].Value.ToString();
@@ -70,18 +70,34 @@ namespace QuanLyCuaHang
 
         private void simpleButtonSua_Click(object sender, EventArgs e)
         {
+            textMaNV.Enabled = false;
             if (dataGridViewNhanVien.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedItem = dataGridViewNhanVien.SelectedRows[0];
                 NhanVien_BUS objNV_BUS = new NhanVien_BUS();
-                //objNV_BUS.SuaNV(textMaNV.Text, textTenNV.Text, textGT.Text,Convert.ToDateTime(dateNgaySinh.EditValue.ToString()), textSDT.Text, textDiaChi.Text, textQueQuan.Text);
-                //dataGridViewNhanVien.DataSource = objNV_BUS.LayDanhSach();
+                objNV_BUS.SuaNV(textMaNV.Text, textTenNV.Text, textGT.Text, (DateTime)DateTime.ParseExact(dateNgaySinh.EditValue.ToString(), "dd/MM/yyyy h:mm:ss tt",
+                                  null), textSDT.Text, textDiaChi.Text, textQueQuan.Text);
+                dataGridViewNhanVien.DataSource = objNV_BUS.LayDanhSach();
             }
         }
 
         private void simpleButtonReset_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(dateNgaySinh.EditValue.ToString());
+            textMaNV.Text = "";
+            textTenNV.Text = "";
+            textGT.Text = "";
+            dateNgaySinh.EditValue = DateTime.Now;
+            textSDT.Text = "";
+            textQueQuan.Text = "";
+            textDiaChi.Text = "";
+        }
+
+        private void simpleButtonThem_Click(object sender, EventArgs e)
+        {
+            NhanVien_BUS objNV_BUS = new NhanVien_BUS();
+            objNV_BUS.ThemNV(textMaNV.Text, textTenNV.Text, textGT.Text, (DateTime)DateTime.ParseExact(dateNgaySinh.EditValue.ToString(), "dd/MM/yyyy h:mm:ss tt",
+                              null), textSDT.Text, textDiaChi.Text, textQueQuan.Text);
+            dataGridViewNhanVien.DataSource = objNV_BUS.LayDanhSach();
         }
     }
 }

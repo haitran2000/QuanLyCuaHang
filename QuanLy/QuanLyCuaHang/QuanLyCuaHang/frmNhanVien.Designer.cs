@@ -332,6 +332,7 @@
             this.simpleButtonThem.Size = new System.Drawing.Size(101, 26);
             this.simpleButtonThem.TabIndex = 30;
             this.simpleButtonThem.Text = "Thêm";
+            this.simpleButtonThem.Click += new System.EventHandler(this.simpleButtonThem_Click);
             // 
             // simpleButtonXoa
             // 
