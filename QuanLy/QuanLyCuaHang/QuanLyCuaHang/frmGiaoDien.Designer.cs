@@ -102,7 +102,7 @@
             this.ribbonPageTimKiem,
             this.ribbonPageCaiDat});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
-            this.ribbonControl1.Size = new System.Drawing.Size(955, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(1009, 143);
             // 
             // btnDangXuat
             // 
@@ -118,6 +118,7 @@
             this.btnDoiMatKhau.Id = 2;
             this.btnDoiMatKhau.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnDoiMatKhau.LargeGlyph")));
             this.btnDoiMatKhau.Name = "btnDoiMatKhau";
+            this.btnDoiMatKhau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDoiMatKhau_ItemClick);
             // 
             // barButtonItemNhanVien
             // 
@@ -239,6 +240,7 @@
             this.barButtonItemDangKy.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemDangKy.LargeGlyph")));
             this.barButtonItemDangKy.LargeGlyphDisabled = global::QuanLyCuaHang.Properties.Resources.user_edit_icon;
             this.barButtonItemDangKy.Name = "barButtonItemDangKy";
+            this.barButtonItemDangKy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemDangKy_ItemClick);
             // 
             // barButtonItemPhanQuyen
             // 
@@ -247,6 +249,7 @@
             this.barButtonItemPhanQuyen.Id = 23;
             this.barButtonItemPhanQuyen.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemPhanQuyen.LargeGlyph")));
             this.barButtonItemPhanQuyen.Name = "barButtonItemPhanQuyen";
+            this.barButtonItemPhanQuyen.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemPhanQuyen_ItemClick);
             // 
             // ribbonPageHeThong
             // 
@@ -368,7 +371,7 @@
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(955, 596);
+            this.ClientSize = new System.Drawing.Size(1009, 614);
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.InactiveGlowColor = System.Drawing.Color.Olive;

@@ -35,6 +35,7 @@ namespace QuanLyCuaHang
             dataGridViewNhanVien.Columns["SDT"].HeaderText = "Số Điện Thoại";
             dataGridViewNhanVien.Columns["DIACHI"].HeaderText = "Địa Chỉ";
             dataGridViewNhanVien.Columns["QUEQUAN"].HeaderText = "Quê QUán";
+            dataGridViewNhanVien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
         private void simpleButtonXoa_Click(object sender, EventArgs e)
         {
@@ -94,10 +95,18 @@ namespace QuanLyCuaHang
 
         private void simpleButtonThem_Click(object sender, EventArgs e)
         {
-            NhanVien_BUS objNV_BUS = new NhanVien_BUS();
-            objNV_BUS.ThemNV(textMaNV.Text, textTenNV.Text, textGT.Text, (DateTime)DateTime.ParseExact(dateNgaySinh.EditValue.ToString(), "dd/MM/yyyy h:mm:ss tt",
+            try
+            {
+                NhanVien_BUS objNV_BUS = new NhanVien_BUS();
+                objNV_BUS.ThemNV(textMaNV.Text, textTenNV.Text, textGT.Text, (DateTime)DateTime.ParseExact(dateNgaySinh.EditValue.ToString(), "dd/MM/yyyy h:mm:ss tt",
                               null), textSDT.Text, textDiaChi.Text, textQueQuan.Text);
-            dataGridViewNhanVien.DataSource = objNV_BUS.LayDanhSach();
+                dataGridViewNhanVien.DataSource = objNV_BUS.LayDanhSach();
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Mã Nhân Viên Không Được Trùng Nhau !!!!!", "Thông Báo");
+            }
+            
         }
     }
 }

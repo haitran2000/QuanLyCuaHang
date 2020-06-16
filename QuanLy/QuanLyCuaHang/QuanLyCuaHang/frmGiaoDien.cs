@@ -35,5 +35,26 @@ namespace QuanLyCuaHang
             nhanVien.MdiParent = this;
             nhanVien.Show();
         }
+
+        private void btnDoiMatKhau_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmDoiMatKhau frmDMK = new frmDoiMatKhau();
+            frmDMK.MdiParent = this;
+            frmDMK.Show();
+        }
+
+        private void barButtonItemDangKy_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmDangKy frmDK = new frmDangKy();
+            frmDK.MdiParent = this;
+            frmDK.Show();
+        }
+
+        private void barButtonItemPhanQuyen_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmPhanQuyen frmPQ = new frmPhanQuyen();
+            frmPQ.MdiParent = this;
+            frmPQ.Show();
+        }
     }
 }

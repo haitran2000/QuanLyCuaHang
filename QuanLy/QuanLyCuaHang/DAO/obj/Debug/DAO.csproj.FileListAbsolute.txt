@@ -5,3 +5,10 @@ C:\Users\H\Desktop\Đồ Án Windows Form\Demo\QuanLyCuaHang\DAO\bin\Debug\DTO.p
 C:\Users\H\Desktop\Đồ Án Windows Form\Demo\QuanLyCuaHang\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
 C:\Users\H\Desktop\Đồ Án Windows Form\Demo\QuanLyCuaHang\DAO\obj\Debug\DAO.dll
 C:\Users\H\Desktop\Đồ Án Windows Form\Demo\QuanLyCuaHang\DAO\obj\Debug\DAO.pdb
+C:\Users\H\Desktop\Đồ Án Windows Form\QuanLyCuaHang-master\QuanLyCuaHang-master\QuanLy\QuanLyCuaHang\DAO\bin\Debug\DAO.dll
+C:\Users\H\Desktop\Đồ Án Windows Form\QuanLyCuaHang-master\QuanLyCuaHang-master\QuanLy\QuanLyCuaHang\DAO\bin\Debug\DAO.pdb
+C:\Users\H\Desktop\Đồ Án Windows Form\QuanLyCuaHang-master\QuanLyCuaHang-master\QuanLy\QuanLyCuaHang\DAO\bin\Debug\DTO.dll
+C:\Users\H\Desktop\Đồ Án Windows Form\QuanLyCuaHang-master\QuanLyCuaHang-master\QuanLy\QuanLyCuaHang\DAO\bin\Debug\DTO.pdb
+C:\Users\H\Desktop\Đồ Án Windows Form\QuanLyCuaHang-master\QuanLyCuaHang-master\QuanLy\QuanLyCuaHang\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\H\Desktop\Đồ Án Windows Form\QuanLyCuaHang-master\QuanLyCuaHang-master\QuanLy\QuanLyCuaHang\DAO\obj\Debug\DAO.dll
+C:\Users\H\Desktop\Đồ Án Windows Form\QuanLyCuaHang-master\QuanLyCuaHang-master\QuanLy\QuanLyCuaHang\DAO\obj\Debug\DAO.pdb

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDangNhap));
             this.groupControlDangNhap = new DevExpress.XtraEditors.GroupControl();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -45,23 +44,25 @@
             // 
             this.groupControlDangNhap.Appearance.BackColor = System.Drawing.Color.White;
             this.groupControlDangNhap.Appearance.Options.UseBackColor = true;
+            this.groupControlDangNhap.Controls.Add(this.simpleButton1);
             this.groupControlDangNhap.Controls.Add(this.label1);
             this.groupControlDangNhap.Controls.Add(this.linkLabel1);
             this.groupControlDangNhap.Controls.Add(this.textBox2);
             this.groupControlDangNhap.Controls.Add(this.textBox1);
             this.groupControlDangNhap.Controls.Add(this.labelControl2);
             this.groupControlDangNhap.Controls.Add(this.labelControl1);
-            this.groupControlDangNhap.Location = new System.Drawing.Point(93, 50);
+            this.groupControlDangNhap.Location = new System.Drawing.Point(101, 12);
             this.groupControlDangNhap.Name = "groupControlDangNhap";
-            this.groupControlDangNhap.Size = new System.Drawing.Size(452, 177);
+            this.groupControlDangNhap.Size = new System.Drawing.Size(745, 319);
             this.groupControlDangNhap.TabIndex = 0;
             this.groupControlDangNhap.Text = "Đăng Nhập";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label1.Location = new System.Drawing.Point(31, 138);
+            this.label1.Location = new System.Drawing.Point(212, 170);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 19);
             this.label1.TabIndex = 5;
@@ -70,8 +71,9 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.linkLabel1.Location = new System.Drawing.Point(201, 138);
+            this.linkLabel1.Location = new System.Drawing.Point(434, 170);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(98, 19);
             this.linkLabel1.TabIndex = 4;
@@ -81,35 +83,35 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(154, 85);
+            this.textBox2.Location = new System.Drawing.Point(202, 100);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(283, 27);
+            this.textBox2.Size = new System.Drawing.Size(446, 27);
             this.textBox2.TabIndex = 3;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(154, 44);
+            this.textBox1.Location = new System.Drawing.Point(202, 44);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(283, 27);
+            this.textBox1.Size = new System.Drawing.Size(446, 27);
             this.textBox1.TabIndex = 2;
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.labelControl2.Location = new System.Drawing.Point(35, 88);
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 13F);
+            this.labelControl2.Location = new System.Drawing.Point(66, 105);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(76, 19);
+            this.labelControl2.Size = new System.Drawing.Size(87, 22);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "Mật Khẩu :";
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.labelControl1.Location = new System.Drawing.Point(35, 49);
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 13F);
+            this.labelControl1.Location = new System.Drawing.Point(61, 49);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(82, 19);
+            this.labelControl1.Size = new System.Drawing.Size(92, 22);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Tài Khoản :";
             // 
@@ -117,9 +119,9 @@
             // 
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 13F);
             this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(280, 281);
+            this.simpleButton1.Location = new System.Drawing.Point(331, 219);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(112, 31);
+            this.simpleButton1.Size = new System.Drawing.Size(128, 52);
             this.simpleButton1.TabIndex = 7;
             this.simpleButton1.Text = "Đăng Nhập";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -128,10 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Tile;
-            this.BackgroundImageStore = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImageStore")));
-            this.ClientSize = new System.Drawing.Size(667, 373);
-            this.Controls.Add(this.simpleButton1);
+            this.ClientSize = new System.Drawing.Size(953, 361);
             this.Controls.Add(this.groupControlDangNhap);
             this.Name = "frmDangNhap";
             this.Text = "frmDangNhap";
