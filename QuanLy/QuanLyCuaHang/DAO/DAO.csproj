@@ -41,6 +41,8 @@
   <ItemGroup>
     <Compile Include="DataProvider.cs" />
     <Compile Include="HangHoa_DAO.cs" />
+    <Compile Include="HoaDonBan_DAO.cs" />
+    <Compile Include="HoaDonNhap_DAO.cs" />
     <Compile Include="NhanVien_DAO.cs" />
     <Compile Include="PhanQuyen_DAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

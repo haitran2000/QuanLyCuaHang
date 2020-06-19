@@ -148,6 +148,7 @@
             this.barButtonItemDSHangHoa.Id = 10;
             this.barButtonItemDSHangHoa.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemDSHangHoa.LargeGlyph")));
             this.barButtonItemDSHangHoa.Name = "barButtonItemDSHangHoa";
+            this.barButtonItemDSHangHoa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemDSHangHoa_ItemClick);
             // 
             // barButtonItemNhaCungCap
             // 

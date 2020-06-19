@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HangHoa_DTO.cs" />
+    <Compile Include="HoaDonBan_DTO.cs" />
+    <Compile Include="HoaDonNhap_DTO.cs" />
     <Compile Include="NhanVien_DTO.cs" />
     <Compile Include="PhanQuyen_DTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

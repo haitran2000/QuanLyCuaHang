@@ -55,5 +55,10 @@ namespace QuanLyCuaHang
                 MessageBox.Show("Chưa Nhập Tài Khoản !", "Thông Báo");
             }
         }
+
+        private void frmDoiMatKhau_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

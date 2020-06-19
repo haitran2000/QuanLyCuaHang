@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhanVien));
-            this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
-            this.btnSua = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -43,10 +37,6 @@
             this.dataGridViewNhanVien = new System.Windows.Forms.DataGridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.btnCapNhatXong = new DevExpress.XtraEditors.SimpleButton();
-            this.btnThemXong = new DevExpress.XtraEditors.SimpleButton();
-            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
-            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.textGT = new DevExpress.XtraEditors.TextEdit();
             this.textMaNV = new DevExpress.XtraEditors.TextEdit();
@@ -63,7 +53,17 @@
             this.layoutControlItemDiaChi = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemSDT = new DevExpress.XtraLayout.LayoutControlItem();
+            this.btnCapNhatXong = new DevExpress.XtraEditors.SimpleButton();
+            this.btnThemXong = new DevExpress.XtraEditors.SimpleButton();
+            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
+            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
+            this.btnSua = new DevExpress.XtraEditors.SimpleButton();
+            this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -92,74 +92,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemSDT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.btnXoa.Appearance.Options.UseFont = true;
-            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
-            this.btnXoa.Location = new System.Drawing.Point(1015, 127);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(147, 36);
-            this.btnXoa.TabIndex = 31;
-            this.btnXoa.Text = "Xoá";
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnSua
-            // 
-            this.btnSua.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.btnSua.Appearance.Options.UseFont = true;
-            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
-            this.btnSua.Location = new System.Drawing.Point(1015, 79);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(147, 36);
-            this.btnSua.TabIndex = 32;
-            this.btnSua.Text = "Cập Nhật";
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(585, 112);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(144, 26);
-            this.simpleButton1.TabIndex = 33;
-            this.simpleButton1.Text = "Reset";
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(423, 112);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(142, 26);
-            this.simpleButton2.TabIndex = 32;
-            this.simpleButton2.Text = "Sửa";
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(227, 112);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(158, 26);
-            this.simpleButton3.TabIndex = 31;
-            this.simpleButton3.Text = "Xoá";
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.simpleButton4.Appearance.Options.UseFont = true;
-            this.simpleButton4.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.Image")));
-            this.simpleButton4.Location = new System.Drawing.Point(12, 112);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(165, 26);
-            this.simpleButton4.TabIndex = 30;
-            this.simpleButton4.Text = "Thêm";
             // 
             // layoutControl2
             // 
@@ -245,54 +177,6 @@
             this.groupControl2.Size = new System.Drawing.Size(1308, 171);
             this.groupControl2.TabIndex = 35;
             this.groupControl2.Text = "Chi Tiết Nhân Viên";
-            // 
-            // btnCapNhatXong
-            // 
-            this.btnCapNhatXong.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.btnCapNhatXong.Appearance.Options.UseFont = true;
-            this.btnCapNhatXong.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhatXong.Image")));
-            this.btnCapNhatXong.Location = new System.Drawing.Point(1168, 81);
-            this.btnCapNhatXong.Name = "btnCapNhatXong";
-            this.btnCapNhatXong.Size = new System.Drawing.Size(135, 34);
-            this.btnCapNhatXong.TabIndex = 38;
-            this.btnCapNhatXong.Text = "Cập Nhật Xong";
-            this.btnCapNhatXong.Click += new System.EventHandler(this.btnCapNhatXong_Click_1);
-            // 
-            // btnThemXong
-            // 
-            this.btnThemXong.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.btnThemXong.Appearance.Options.UseFont = true;
-            this.btnThemXong.Image = ((System.Drawing.Image)(resources.GetObject("btnThemXong.Image")));
-            this.btnThemXong.Location = new System.Drawing.Point(1168, 27);
-            this.btnThemXong.Name = "btnThemXong";
-            this.btnThemXong.Size = new System.Drawing.Size(135, 34);
-            this.btnThemXong.TabIndex = 37;
-            this.btnThemXong.Text = "Thêm Xong";
-            this.btnThemXong.Click += new System.EventHandler(this.btnThemXong_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.btnThem.Appearance.Options.UseFont = true;
-            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
-            this.btnThem.Location = new System.Drawing.Point(1015, 27);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(147, 34);
-            this.btnThem.TabIndex = 36;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.btnHuy.Appearance.Options.UseFont = true;
-            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
-            this.btnHuy.Location = new System.Drawing.Point(1168, 127);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(135, 36);
-            this.btnHuy.TabIndex = 35;
-            this.btnHuy.Text = "Huỷ";
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // layoutControl1
             // 
@@ -460,6 +344,54 @@
             this.layoutControlItemSDT.Text = "Số Điện Thoại";
             this.layoutControlItemSDT.TextSize = new System.Drawing.Size(69, 13);
             // 
+            // btnCapNhatXong
+            // 
+            this.btnCapNhatXong.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnCapNhatXong.Appearance.Options.UseFont = true;
+            this.btnCapNhatXong.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhatXong.Image")));
+            this.btnCapNhatXong.Location = new System.Drawing.Point(1168, 81);
+            this.btnCapNhatXong.Name = "btnCapNhatXong";
+            this.btnCapNhatXong.Size = new System.Drawing.Size(135, 34);
+            this.btnCapNhatXong.TabIndex = 38;
+            this.btnCapNhatXong.Text = "Cập Nhật Xong";
+            this.btnCapNhatXong.Click += new System.EventHandler(this.btnCapNhatXong_Click_1);
+            // 
+            // btnThemXong
+            // 
+            this.btnThemXong.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnThemXong.Appearance.Options.UseFont = true;
+            this.btnThemXong.Image = ((System.Drawing.Image)(resources.GetObject("btnThemXong.Image")));
+            this.btnThemXong.Location = new System.Drawing.Point(1168, 27);
+            this.btnThemXong.Name = "btnThemXong";
+            this.btnThemXong.Size = new System.Drawing.Size(135, 34);
+            this.btnThemXong.TabIndex = 37;
+            this.btnThemXong.Text = "Thêm Xong";
+            this.btnThemXong.Click += new System.EventHandler(this.btnThemXong_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnThem.Appearance.Options.UseFont = true;
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.Location = new System.Drawing.Point(1015, 27);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(147, 34);
+            this.btnThem.TabIndex = 36;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnHuy.Appearance.Options.UseFont = true;
+            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
+            this.btnHuy.Location = new System.Drawing.Point(1168, 127);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(135, 36);
+            this.btnHuy.TabIndex = 35;
+            this.btnHuy.Text = "Huỷ";
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            // 
             // imageSlider1
             // 
             this.imageSlider1.CurrentImageIndex = 0;
@@ -471,6 +403,74 @@
             this.imageSlider1.TabIndex = 1;
             this.imageSlider1.Text = "imageSlider1";
             this.imageSlider1.UseDisabledStatePainter = true;
+            // 
+            // btnSua
+            // 
+            this.btnSua.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnSua.Appearance.Options.UseFont = true;
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.Location = new System.Drawing.Point(1015, 79);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(147, 36);
+            this.btnSua.TabIndex = 32;
+            this.btnSua.Text = "Cập Nhật";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnXoa.Appearance.Options.UseFont = true;
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.Location = new System.Drawing.Point(1015, 127);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(147, 36);
+            this.btnXoa.TabIndex = 31;
+            this.btnXoa.Text = "Xoá";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(585, 112);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(144, 26);
+            this.simpleButton1.TabIndex = 33;
+            this.simpleButton1.Text = "Reset";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.simpleButton2.Appearance.Options.UseFont = true;
+            this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(423, 112);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(142, 26);
+            this.simpleButton2.TabIndex = 32;
+            this.simpleButton2.Text = "Sửa";
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            this.simpleButton3.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.Image")));
+            this.simpleButton3.Location = new System.Drawing.Point(227, 112);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(158, 26);
+            this.simpleButton3.TabIndex = 31;
+            this.simpleButton3.Text = "Xoá";
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.simpleButton4.Appearance.Options.UseFont = true;
+            this.simpleButton4.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.Image")));
+            this.simpleButton4.Location = new System.Drawing.Point(12, 112);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(165, 26);
+            this.simpleButton4.TabIndex = 30;
+            this.simpleButton4.Text = "Thêm";
             // 
             // frmNhanVien
             // 

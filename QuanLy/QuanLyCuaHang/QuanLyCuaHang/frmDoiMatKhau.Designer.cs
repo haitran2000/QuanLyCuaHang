@@ -53,9 +53,9 @@
             this.groupControl1.Controls.Add(this.textMKCu);
             this.groupControl1.Controls.Add(this.textMKMoiLai);
             this.groupControl1.Controls.Add(this.textMKMoi);
-            this.groupControl1.Location = new System.Drawing.Point(91, 12);
+            this.groupControl1.Location = new System.Drawing.Point(37, 12);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(751, 337);
+            this.groupControl1.Size = new System.Drawing.Size(893, 337);
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Text = "Đổi Mật Khẩu";
             // 
@@ -148,6 +148,7 @@
             this.Controls.Add(this.groupControl1);
             this.Name = "frmDoiMatKhau";
             this.Text = "frmDoiMatKhau";
+            this.Load += new System.EventHandler(this.frmDoiMatKhau_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();

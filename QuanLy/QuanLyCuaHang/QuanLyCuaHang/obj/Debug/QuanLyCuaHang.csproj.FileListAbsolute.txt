@@ -150,3 +150,5 @@ C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCu
 C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.csproj.GenerateResource.Cache
 C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.exe.licenses
 C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.frmHangHoa.resources
+C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.frmHoaDonBan.resources
+C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.frmHoaDonNhap.resources

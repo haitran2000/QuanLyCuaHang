@@ -58,5 +58,12 @@ namespace QuanLyCuaHang
             frmPQ.MdiParent = this;
             frmPQ.Show();
         }
+
+        private void barButtonItemDSHangHoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmHangHoa frmHH = new frmHangHoa();
+            frmHH.MdiParent = this;
+            frmHH.Show();
+        }
     }
 }
