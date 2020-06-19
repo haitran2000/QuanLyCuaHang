@@ -21,7 +21,7 @@ namespace DAO
                 // 2. mở kết nối
                 // 3. tạo đối tượng command
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "select PHANQUYEN.GHICHU,TAIKHOAN.MAQUYEN,TAIKHOAN.TAIKHOAN from TAIKHOAN,PHANQUYEN where TAIKHOAN.TRANGTHAI=1 AND PHANQUYEN.MAQUYEN=TAIKHOAN.MAQUYEN;";
+                cmd.CommandText = "select TAIKHOAN.TAIKHOAN,TAIKHOAN.MAQUYEN,PHANQUYEN.GHICHU from TAIKHOAN,PHANQUYEN where TAIKHOAN.TRANGTHAI=1 AND PHANQUYEN.MAQUYEN=TAIKHOAN.MAQUYEN;";
                 cmd.Connection = conn;
                  // 4. thực thi cmd và xử lý kết quả
                 dr = cmd.ExecuteReader();
@@ -30,11 +30,11 @@ namespace DAO
                     TaiKhoan_DTO tK = new TaiKhoan_DTO();
                     // đọc từng dòng dữ liệu
                     if (!dr.IsDBNull(0))
-                        tK.ghiChu = (string)dr[0];
+                        tK.TaiKhoan = (string)dr[0];
                     if (!dr.IsDBNull(1))
-                        tK.maQuyen = (int)dr[1];
+                        tK.MaQuyen = (int)dr[1];
                     if (!dr.IsDBNull(2))
-                        tK.taiKhoan = (string)dr[2];
+                        tK.GhiChu = (string)dr[2];
                     dsTK.Add(tK);
                 }
 

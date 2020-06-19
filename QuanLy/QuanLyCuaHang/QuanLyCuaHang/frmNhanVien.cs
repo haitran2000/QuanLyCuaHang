@@ -21,9 +21,11 @@ namespace QuanLyCuaHang
         public frmNhanVien()
         {
             InitializeComponent();
+          
         }
         private void frmNhanVien_Load(object sender, EventArgs e)
         {           
+           
             NhanVien_BUS nV_BUS = new NhanVien_BUS();
             dsNhanVien = nV_BUS.LayDanhSach();
             dataGridViewNhanVien.DataSource = dsNhanVien;
@@ -36,8 +38,32 @@ namespace QuanLyCuaHang
             dataGridViewNhanVien.Columns["DIACHI"].HeaderText = "Địa Chỉ";
             dataGridViewNhanVien.Columns["QUEQUAN"].HeaderText = "Quê QUán";
             dataGridViewNhanVien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            
         }
-        private void simpleButtonXoa_Click(object sender, EventArgs e)
+        private void hiemThiKhoa()
+        {
+                textTenNV.ReadOnly = true;
+                textMaNV.ReadOnly = true;
+                textGT.ReadOnly = true;
+                textDiaChi.ReadOnly = true;
+                textQueQuan.ReadOnly = true;
+                dateNgaySinh.ReadOnly = true;
+                textSDT.ReadOnly = true;
+                btnCapNhatXong.Enabled = false;
+                btnThemXong.Enabled = false;
+                btnHuy.Enabled = false;
+        }
+        private void hiemThiMo()
+        {
+            textTenNV.ReadOnly = false;
+            textMaNV.ReadOnly = false;
+            textGT.ReadOnly = false;
+            textDiaChi.ReadOnly = false;
+            textQueQuan.ReadOnly = false;
+            dateNgaySinh.ReadOnly = false;
+            textSDT.ReadOnly = false;
+        }
+        private void btnXoa_Click(object sender, EventArgs e)
         {
             if (dataGridViewNhanVien.SelectedRows.Count > 0)
             {
@@ -67,22 +93,25 @@ namespace QuanLyCuaHang
                 textQueQuan.Text = item.Cells["QUEQUAN"].Value.ToString();
                 textSDT.Text = item.Cells["SDT"].Value.ToString();
             }
+            hiemThiKhoa();
+            btnSua.Enabled = true;
+            btnThem.Enabled = true;
+            btnXoa.Enabled = true;
+            
         }
 
-        private void simpleButtonSua_Click(object sender, EventArgs e)
+        private void btnSua_Click(object sender, EventArgs e)
         {
-            textMaNV.Enabled = false;
-            if (dataGridViewNhanVien.SelectedRows.Count > 0)
-            {
-                DataGridViewRow selectedItem = dataGridViewNhanVien.SelectedRows[0];
-                NhanVien_BUS objNV_BUS = new NhanVien_BUS();
-                objNV_BUS.SuaNV(textMaNV.Text, textTenNV.Text, textGT.Text, (DateTime)DateTime.ParseExact(dateNgaySinh.EditValue.ToString(), "dd/MM/yyyy h:mm:ss tt",
-                                  null), textSDT.Text, textDiaChi.Text, textQueQuan.Text);
-                dataGridViewNhanVien.DataSource = objNV_BUS.LayDanhSach();
-            }
+            
+            btnCapNhatXong.Enabled = true;
+            btnSua.Enabled = false;
+            btnThem.Enabled = false;
+            btnXoa.Enabled = false;
+            hiemThiMo();
+            textMaNV.ReadOnly = true;
+            
         }
-
-        private void simpleButtonReset_Click(object sender, EventArgs e)
+        private void btnThem_Click(object sender, EventArgs e)
         {
             textMaNV.Text = "";
             textTenNV.Text = "";
@@ -91,22 +120,62 @@ namespace QuanLyCuaHang
             textSDT.Text = "";
             textQueQuan.Text = "";
             textDiaChi.Text = "";
+            btnThemXong.Enabled = true;
+            hiemThiMo();
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
+            btnHuy.Enabled = true;
         }
 
-        private void simpleButtonThem_Click(object sender, EventArgs e)
+        private void btnThemXong_Click(object sender, EventArgs e)
         {
-            try
+            if (textMaNV.Text != "")
             {
                 NhanVien_BUS objNV_BUS = new NhanVien_BUS();
                 objNV_BUS.ThemNV(textMaNV.Text, textTenNV.Text, textGT.Text, (DateTime)DateTime.ParseExact(dateNgaySinh.EditValue.ToString(), "dd/MM/yyyy h:mm:ss tt",
                               null), textSDT.Text, textDiaChi.Text, textQueQuan.Text);
                 dataGridViewNhanVien.DataSource = objNV_BUS.LayDanhSach();
+                btnSua.Enabled = true;
+                btnXoa.Enabled = true;
             }
-            catch(Exception)
+            else
             {
-                MessageBox.Show("Mã Nhân Viên Không Được Trùng Nhau !!!!!", "Thông Báo");
+                MessageBox.Show("Mã Nhân Viên Không Được Để Trống !!", "Thông Báo");
             }
             
+
         }
+            
+        private void btnCapNhatXong_Click_1(object sender, EventArgs e)
+        {
+
+            if (dataGridViewNhanVien.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedItem = dataGridViewNhanVien.SelectedRows[0];
+                NhanVien_BUS objNV_BUS = new NhanVien_BUS();
+                objNV_BUS.SuaNV(textMaNV.Text, textTenNV.Text, textGT.Text, (DateTime)DateTime.ParseExact(dateNgaySinh.EditValue.ToString(), "dd/MM/yyyy h:mm:ss tt",
+                                  null), textSDT.Text, textDiaChi.Text, textQueQuan.Text);
+                dataGridViewNhanVien.DataSource = objNV_BUS.LayDanhSach();
+            }
+            btnSua.Enabled = true;
+            btnThem.Enabled = true;
+            btnXoa.Enabled = true;
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            textMaNV.Text = "";
+            textTenNV.Text = "";
+            textGT.Text = "";
+            dateNgaySinh.EditValue = DateTime.Now;
+            textSDT.Text = "";
+            textQueQuan.Text = "";
+            textDiaChi.Text = "";
+            hiemThiKhoa();
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
+        }
+
+
     }
 }

@@ -14,6 +14,8 @@ namespace QuanLyCuaHang
         public frmGiaoDien()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
         }
 
         private void GiaoDien_Load(object sender, EventArgs e)

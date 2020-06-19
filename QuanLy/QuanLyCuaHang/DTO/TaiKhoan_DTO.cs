@@ -8,11 +8,11 @@ namespace DTO
 {
     public class TaiKhoan_DTO
     {
-        public string taiKhoan;
+        private string taiKhoan;
         private string matKhau;
-        public int maQuyen;
+        private int maQuyen;
         private int trangThai;
-        public string ghiChu;
+        private string ghiChu;
 
         public string GhiChu
         {

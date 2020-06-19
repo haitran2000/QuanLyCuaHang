@@ -27,12 +27,28 @@ namespace QuanLyCuaHang
             dataGridViewPhanQuyen.Columns["TAIKHOAN"].HeaderText = "Tài Khoản";
             dataGridViewPhanQuyen.Columns["MAQUYEN"].HeaderText = "Mã Quyền";
             dataGridViewPhanQuyen.Columns["GHICHU"].HeaderText = "Ghi Chú";
+            dataGridViewPhanQuyen.Columns["MATKHAU"].Visible = false;
+            dataGridViewPhanQuyen.Columns["TRANGTHAI"].Visible = false;
             dataGridViewPhanQuyen.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            PhanQuyen_BUS pQ_BUS = new PhanQuyen_BUS();
+            comboBoxMaQuyen.DataSource = pQ_BUS.LayDanhSach();
+            comboBoxMaQuyen.ValueMember = "MAQUYEN";
         }
 
         private void dataGridViewPhanQuyen_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+        }
 
+        private void dataGridViewPhanQuyen_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridViewPhanQuyen.SelectedRows.Count > 0)
+            {
+                DataGridViewRow item = dataGridViewPhanQuyen.SelectedRows[0];
+                textTK.Text = item.Cells["TAIKHOAN"].Value.ToString();
+                textGhiChu.Text = item.Cells["GHICHU"].Value.ToString();
+            }
+                
         }
     }
 }

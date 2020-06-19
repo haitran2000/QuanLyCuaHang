@@ -7,13 +7,13 @@ namespace DTO
     public class NhanVien_DTO
     {
         //Khoi Tao Bien
-        public string maNV;
-        public string tenNV;
-        public string gioiTinh;
-        public DateTime ngaySinh;
-        public string sdt;
-        public string diaChi;
-        public string queQuan;
+        private string maNV;
+        private string tenNV;
+        private string gioiTinh;
+        private DateTime ngaySinh;
+        private string sdt;
+        private string diaChi;
+        private string queQuan;
         public string MaNV
         {
             get { return maNV; }

@@ -20,7 +20,7 @@ namespace QuanLyCuaHang
 
             //BonusSkins.Register();
             //SkinManager.EnableFormSkins();
-            Application.Run(new frmGiaoDien());
+            Application.Run(new frmHangHoa());
         }
     }
 }

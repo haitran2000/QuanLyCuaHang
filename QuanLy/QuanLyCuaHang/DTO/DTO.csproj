@@ -39,7 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HangHoa_DTO.cs" />
     <Compile Include="NhanVien_DTO.cs" />
+    <Compile Include="PhanQuyen_DTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaiKhoan_DTO.cs" />
   </ItemGroup>

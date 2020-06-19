@@ -16,3 +16,12 @@ C:\Users\H\Desktop\Đồ Án Windows Form\QuanLyCuaHang-master\QuanLyCuaHang-mas
 C:\Users\H\Desktop\Đồ Án Windows Form\QuanLyCuaHang-master\QuanLyCuaHang-master\QuanLy\QuanLyCuaHang\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 C:\Users\H\Desktop\Đồ Án Windows Form\QuanLyCuaHang-master\QuanLyCuaHang-master\QuanLy\QuanLyCuaHang\BUS\obj\Debug\BUS.dll
 C:\Users\H\Desktop\Đồ Án Windows Form\QuanLyCuaHang-master\QuanLyCuaHang-master\QuanLy\QuanLyCuaHang\BUS\obj\Debug\BUS.pdb
+C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\BUS\bin\Debug\BUS.dll
+C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\BUS\bin\Debug\BUS.pdb
+C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\BUS\bin\Debug\DAO.dll
+C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\BUS\bin\Debug\DTO.dll
+C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\BUS\bin\Debug\DAO.pdb
+C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\BUS\bin\Debug\DTO.pdb
+C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\BUS\obj\Debug\BUS.dll
+C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\BUS\obj\Debug\BUS.pdb

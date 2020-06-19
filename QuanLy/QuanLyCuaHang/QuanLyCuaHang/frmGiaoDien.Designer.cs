@@ -70,6 +70,7 @@
             // 
             // ribbonControl1
             // 
+            this.ribbonControl1.ExpandCollapseItem.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
@@ -101,8 +102,7 @@
             this.ribbonPageBaoCao,
             this.ribbonPageTimKiem,
             this.ribbonPageCaiDat});
-            this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
-            this.ribbonControl1.Size = new System.Drawing.Size(1009, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(1376, 143);
             // 
             // btnDangXuat
             // 
@@ -371,7 +371,7 @@
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1009, 614);
+            this.ClientSize = new System.Drawing.Size(1376, 774);
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.InactiveGlowColor = System.Drawing.Color.Olive;
