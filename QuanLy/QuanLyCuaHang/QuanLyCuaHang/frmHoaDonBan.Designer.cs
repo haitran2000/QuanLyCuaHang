@@ -92,6 +92,7 @@
             this.btnXemChiTietHDB.TabIndex = 18;
             this.btnXemChiTietHDB.Text = "Xem Chi Tiết Hoá Đơn Đang Chọn";
             this.btnXemChiTietHDB.UseVisualStyleBackColor = false;
+            this.btnXemChiTietHDB.Click += new System.EventHandler(this.btnXemChiTietHDB_Click);
             // 
             // dataGridViewHoaDonBan
             // 

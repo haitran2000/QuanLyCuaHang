@@ -35,5 +35,11 @@ namespace QuanLyCuaHang
             
 
         }
+
+        private void btnXemChiTietHDB_Click(object sender, EventArgs e)
+        {
+            frmChiTietHoaDonBan frmCTHDB = new frmChiTietHoaDonBan();
+            frmCTHDB.Show();
+        }
     }
 }

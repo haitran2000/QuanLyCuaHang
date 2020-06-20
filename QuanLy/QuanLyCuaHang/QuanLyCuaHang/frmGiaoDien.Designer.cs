@@ -102,6 +102,7 @@
             this.ribbonPageBaoCao,
             this.ribbonPageTimKiem,
             this.ribbonPageCaiDat});
+            this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.ribbonControl1.Size = new System.Drawing.Size(1376, 143);
             // 
             // btnDangXuat
@@ -134,6 +135,7 @@
             this.barButtonItemHoaDonBan.Id = 5;
             this.barButtonItemHoaDonBan.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemHoaDonBan.LargeGlyph")));
             this.barButtonItemHoaDonBan.Name = "barButtonItemHoaDonBan";
+            this.barButtonItemHoaDonBan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemHoaDonBan_ItemClick);
             // 
             // barButtonItemHoaDonNhaphang
             // 
@@ -141,6 +143,7 @@
             this.barButtonItemHoaDonNhaphang.Id = 9;
             this.barButtonItemHoaDonNhaphang.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemHoaDonNhaphang.LargeGlyph")));
             this.barButtonItemHoaDonNhaphang.Name = "barButtonItemHoaDonNhaphang";
+            this.barButtonItemHoaDonNhaphang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemHoaDonNhaphang_ItemClick);
             // 
             // barButtonItemDSHangHoa
             // 
@@ -156,6 +159,7 @@
             this.barButtonItemNhaCungCap.Id = 11;
             this.barButtonItemNhaCungCap.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemNhaCungCap.LargeGlyph")));
             this.barButtonItemNhaCungCap.Name = "barButtonItemNhaCungCap";
+            this.barButtonItemNhaCungCap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemNhaCungCap_ItemClick);
             // 
             // barButtonItemLoaiHang
             // 
@@ -163,6 +167,7 @@
             this.barButtonItemLoaiHang.Id = 12;
             this.barButtonItemLoaiHang.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemLoaiHang.LargeGlyph")));
             this.barButtonItemLoaiHang.Name = "barButtonItemLoaiHang";
+            this.barButtonItemLoaiHang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemLoaiHang_ItemClick);
             // 
             // barButtonItemDanhThu
             // 
@@ -370,6 +375,8 @@
             // frmGiaoDien
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
+            this.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1376, 774);

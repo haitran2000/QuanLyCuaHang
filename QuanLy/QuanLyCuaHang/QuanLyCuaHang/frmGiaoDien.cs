@@ -65,5 +65,33 @@ namespace QuanLyCuaHang
             frmHH.MdiParent = this;
             frmHH.Show();
         }
+
+        private void barButtonItemHoaDonBan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmHoaDonBan frmHDB = new frmHoaDonBan();
+            frmHDB.MdiParent = this;
+            frmHDB.Show();
+        }
+
+        private void barButtonItemHoaDonNhaphang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmHoaDonNhap frmHDN = new frmHoaDonNhap();
+            frmHDN.MdiParent = this;
+            frmHDN.Show();
+        }
+
+        private void barButtonItemNhaCungCap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmNhaCungCap frmNCC = new frmNhaCungCap();
+            frmNCC.MdiParent = this;
+            frmNCC.Show();
+        }
+
+        private void barButtonItemLoaiHang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmLoaiHang frmLH = new frmLoaiHang();
+            frmLH.MdiParent = this;
+            frmLH.Show();
+        }
     }
 }

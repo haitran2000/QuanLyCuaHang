@@ -33,5 +33,11 @@ namespace QuanLyCuaHang
             dataGridViewHoaDonNhap.Columns["TONGTIEN"].HeaderText = "Tổng Tiền";
             dataGridViewHoaDonNhap.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
+
+        private void btnXemChiTietHDN_Click(object sender, EventArgs e)
+        {
+            frmChiTietHoaDonNhap frmCTHDN = new frmChiTietHoaDonNhap();
+            frmCTHDN.Show();
+        }
     }
 }

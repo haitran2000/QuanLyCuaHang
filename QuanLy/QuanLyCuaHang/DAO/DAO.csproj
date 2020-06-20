@@ -39,10 +39,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietHoaDonBan_DAO.cs" />
+    <Compile Include="ChiTietHoaDonNhap_DAO.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="HangHoa_DAO.cs" />
     <Compile Include="HoaDonBan_DAO.cs" />
     <Compile Include="HoaDonNhap_DAO.cs" />
+    <Compile Include="LoaiHang_DAO.cs" />
+    <Compile Include="NhaCungCap_DAO.cs" />
     <Compile Include="NhanVien_DAO.cs" />
     <Compile Include="PhanQuyen_DAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

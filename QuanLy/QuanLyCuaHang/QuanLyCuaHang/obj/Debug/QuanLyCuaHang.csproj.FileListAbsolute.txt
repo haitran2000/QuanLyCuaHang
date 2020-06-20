@@ -152,3 +152,7 @@ C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCu
 C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.frmHangHoa.resources
 C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.frmHoaDonBan.resources
 C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.frmHoaDonNhap.resources
+C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.frmNhaCungCap.resources
+C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.frmLoaiHang.resources
+C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.frmChiTietHoaDonBan.resources
+C:\Users\H\Desktop\Đồ Án Windows Form\Git_DoAn\QuanLyCuaHang\QuanLy\QuanLyCuaHang\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.frmChiTietHoaDonNhap.resources

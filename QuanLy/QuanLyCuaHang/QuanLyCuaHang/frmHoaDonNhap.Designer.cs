@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHoaDonNhap));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnXemChiTietHDN = new System.Windows.Forms.Button();
             this.dataGridViewHoaDonNhap = new System.Windows.Forms.DataGridView();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.btnCapNhatXong = new DevExpress.XtraEditors.SimpleButton();
@@ -51,7 +52,6 @@
             this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.btnSua = new DevExpress.XtraEditors.SimpleButton();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
-            this.btnXemChiTietHDN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHoaDonNhap)).BeginInit();
@@ -83,6 +83,17 @@
             this.groupControl1.TabIndex = 36;
             this.groupControl1.Text = "Danh Sách Hoá Nhập Hàng";
             // 
+            // btnXemChiTietHDN
+            // 
+            this.btnXemChiTietHDN.BackColor = System.Drawing.Color.Lime;
+            this.btnXemChiTietHDN.Location = new System.Drawing.Point(1215, 36);
+            this.btnXemChiTietHDN.Name = "btnXemChiTietHDN";
+            this.btnXemChiTietHDN.Size = new System.Drawing.Size(75, 344);
+            this.btnXemChiTietHDN.TabIndex = 17;
+            this.btnXemChiTietHDN.Text = "Xem Chi Tiết Hoá Đơn Đang Chọn";
+            this.btnXemChiTietHDN.UseVisualStyleBackColor = false;
+            this.btnXemChiTietHDN.Click += new System.EventHandler(this.btnXemChiTietHDN_Click);
+            // 
             // dataGridViewHoaDonNhap
             // 
             this.dataGridViewHoaDonNhap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -106,7 +117,7 @@
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(1308, 171);
             this.groupControl2.TabIndex = 37;
-            this.groupControl2.Text = "Thông Tin Hoá Đơn Bán";
+            this.groupControl2.Text = "Thông Tin Hoá Đơn Nhập";
             // 
             // btnCapNhatXong
             // 
@@ -307,16 +318,6 @@
             this.btnXoa.Size = new System.Drawing.Size(147, 36);
             this.btnXoa.TabIndex = 31;
             this.btnXoa.Text = "Xoá";
-            // 
-            // btnXemChiTietHDN
-            // 
-            this.btnXemChiTietHDN.BackColor = System.Drawing.Color.Lime;
-            this.btnXemChiTietHDN.Location = new System.Drawing.Point(1215, 36);
-            this.btnXemChiTietHDN.Name = "btnXemChiTietHDN";
-            this.btnXemChiTietHDN.Size = new System.Drawing.Size(75, 344);
-            this.btnXemChiTietHDN.TabIndex = 17;
-            this.btnXemChiTietHDN.Text = "Xem Chi Tiết Hoá Đơn Đang Chọn";
-            this.btnXemChiTietHDN.UseVisualStyleBackColor = false;
             // 
             // frmHoaDonNhap
             // 

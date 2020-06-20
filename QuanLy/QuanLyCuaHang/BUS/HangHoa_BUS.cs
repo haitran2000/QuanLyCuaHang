@@ -9,12 +9,13 @@ namespace BUS
 {
     public class HangHoa_BUS
     {
+        HangHoa_DAO objHH_DAO = new HangHoa_DAO();
         public List<HangHoa_DTO> LayDanhSach()
         {
             HangHoa_DAO objHH_DAO = new HangHoa_DAO();
             return objHH_DAO.LayDanhSach();
         }
-        HangHoa_DAO objHH_DAO = new HangHoa_DAO();
+        
         public void XoaNV(string maHH)
         {
             // gọi xóa từ DAO
