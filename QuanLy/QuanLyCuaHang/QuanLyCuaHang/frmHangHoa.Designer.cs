@@ -32,6 +32,13 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.dataGridViewHangHoa = new System.Windows.Forms.DataGridView();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.btnCapNhatXong = new DevExpress.XtraEditors.SimpleButton();
+            this.btnThemXong = new DevExpress.XtraEditors.SimpleButton();
+            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
+            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSua = new DevExpress.XtraEditors.SimpleButton();
+            this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
+            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.textBoxGiaNhap = new System.Windows.Forms.TextBox();
             this.textBoxGiaBan = new System.Windows.Forms.TextBox();
@@ -48,18 +55,12 @@
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.btnCapNhatXong = new DevExpress.XtraEditors.SimpleButton();
-            this.btnThemXong = new DevExpress.XtraEditors.SimpleButton();
-            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
-            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
-            this.btnSua = new DevExpress.XtraEditors.SimpleButton();
-            this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
-            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHangHoa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxMaLoaiHang.Properties)).BeginInit();
@@ -75,7 +76,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -111,6 +111,85 @@
             this.groupControl2.Size = new System.Drawing.Size(1308, 153);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Chi Tiết Hàng Hoá";
+            // 
+            // btnCapNhatXong
+            // 
+            this.btnCapNhatXong.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnCapNhatXong.Appearance.Options.UseFont = true;
+            this.btnCapNhatXong.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhatXong.Image")));
+            this.btnCapNhatXong.Location = new System.Drawing.Point(1177, 62);
+            this.btnCapNhatXong.Name = "btnCapNhatXong";
+            this.btnCapNhatXong.Size = new System.Drawing.Size(126, 34);
+            this.btnCapNhatXong.TabIndex = 44;
+            this.btnCapNhatXong.Text = "Cập Nhật Xong";
+            // 
+            // btnThemXong
+            // 
+            this.btnThemXong.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnThemXong.Appearance.Options.UseFont = true;
+            this.btnThemXong.Image = ((System.Drawing.Image)(resources.GetObject("btnThemXong.Image")));
+            this.btnThemXong.Location = new System.Drawing.Point(1182, 21);
+            this.btnThemXong.Name = "btnThemXong";
+            this.btnThemXong.Size = new System.Drawing.Size(121, 34);
+            this.btnThemXong.TabIndex = 43;
+            this.btnThemXong.Text = "Thêm Xong";
+            // 
+            // btnThem
+            // 
+            this.btnThem.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnThem.Appearance.Options.UseFont = true;
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.Location = new System.Drawing.Point(1076, 22);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(89, 34);
+            this.btnThem.TabIndex = 42;
+            this.btnThem.Text = "Thêm";
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnHuy.Appearance.Options.UseFont = true;
+            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
+            this.btnHuy.Location = new System.Drawing.Point(1177, 107);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(126, 36);
+            this.btnHuy.TabIndex = 41;
+            this.btnHuy.Text = "Huỷ";
+            // 
+            // btnSua
+            // 
+            this.btnSua.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnSua.Appearance.Options.UseFont = true;
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.Location = new System.Drawing.Point(1076, 61);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(89, 36);
+            this.btnSua.TabIndex = 40;
+            this.btnSua.Text = "Cập Nhật";
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnXoa.Appearance.Options.UseFont = true;
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.Location = new System.Drawing.Point(1076, 107);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(89, 36);
+            this.btnXoa.TabIndex = 39;
+            this.btnXoa.Text = "Xoá";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // imageSlider1
+            // 
+            this.imageSlider1.CurrentImageIndex = 0;
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images"))));
+            this.imageSlider1.LayoutMode = DevExpress.Utils.Drawing.ImageLayoutMode.Stretch;
+            this.imageSlider1.Location = new System.Drawing.Point(16, 34);
+            this.imageSlider1.Name = "imageSlider1";
+            this.imageSlider1.Size = new System.Drawing.Size(141, 109);
+            this.imageSlider1.TabIndex = 1;
+            this.imageSlider1.Text = "imageSlider1";
+            this.imageSlider1.UseDisabledStatePainter = true;
             // 
             // layoutControl1
             // 
@@ -266,85 +345,6 @@
             this.layoutControlItem5.Text = "Giá Nhập";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(95, 13);
             // 
-            // btnCapNhatXong
-            // 
-            this.btnCapNhatXong.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.btnCapNhatXong.Appearance.Options.UseFont = true;
-            this.btnCapNhatXong.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhatXong.Image")));
-            this.btnCapNhatXong.Location = new System.Drawing.Point(1177, 62);
-            this.btnCapNhatXong.Name = "btnCapNhatXong";
-            this.btnCapNhatXong.Size = new System.Drawing.Size(126, 34);
-            this.btnCapNhatXong.TabIndex = 44;
-            this.btnCapNhatXong.Text = "Cập Nhật Xong";
-            // 
-            // btnThemXong
-            // 
-            this.btnThemXong.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.btnThemXong.Appearance.Options.UseFont = true;
-            this.btnThemXong.Image = ((System.Drawing.Image)(resources.GetObject("btnThemXong.Image")));
-            this.btnThemXong.Location = new System.Drawing.Point(1182, 21);
-            this.btnThemXong.Name = "btnThemXong";
-            this.btnThemXong.Size = new System.Drawing.Size(121, 34);
-            this.btnThemXong.TabIndex = 43;
-            this.btnThemXong.Text = "Thêm Xong";
-            // 
-            // btnThem
-            // 
-            this.btnThem.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.btnThem.Appearance.Options.UseFont = true;
-            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
-            this.btnThem.Location = new System.Drawing.Point(1076, 22);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(89, 34);
-            this.btnThem.TabIndex = 42;
-            this.btnThem.Text = "Thêm";
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.btnHuy.Appearance.Options.UseFont = true;
-            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
-            this.btnHuy.Location = new System.Drawing.Point(1177, 107);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(126, 36);
-            this.btnHuy.TabIndex = 41;
-            this.btnHuy.Text = "Huỷ";
-            // 
-            // btnSua
-            // 
-            this.btnSua.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.btnSua.Appearance.Options.UseFont = true;
-            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
-            this.btnSua.Location = new System.Drawing.Point(1076, 61);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(89, 36);
-            this.btnSua.TabIndex = 40;
-            this.btnSua.Text = "Cập Nhật";
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.btnXoa.Appearance.Options.UseFont = true;
-            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
-            this.btnXoa.Location = new System.Drawing.Point(1076, 107);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(89, 36);
-            this.btnXoa.TabIndex = 39;
-            this.btnXoa.Text = "Xoá";
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // imageSlider1
-            // 
-            this.imageSlider1.CurrentImageIndex = 0;
-            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images"))));
-            this.imageSlider1.LayoutMode = DevExpress.Utils.Drawing.ImageLayoutMode.Stretch;
-            this.imageSlider1.Location = new System.Drawing.Point(16, 34);
-            this.imageSlider1.Name = "imageSlider1";
-            this.imageSlider1.Size = new System.Drawing.Size(141, 109);
-            this.imageSlider1.TabIndex = 1;
-            this.imageSlider1.Text = "imageSlider1";
-            this.imageSlider1.UseDisabledStatePainter = true;
-            // 
             // frmHangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -360,6 +360,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHangHoa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxMaLoaiHang.Properties)).EndInit();
@@ -375,7 +376,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
             this.ResumeLayout(false);
 
         }

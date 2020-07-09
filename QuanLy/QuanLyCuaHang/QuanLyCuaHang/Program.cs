@@ -18,9 +18,9 @@ namespace QuanLyCuaHang
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //BonusSkins.Register();
-            //SkinManager.EnableFormSkins();
-            Application.Run(new frmGiaoDien());
+            BonusSkins.Register();
+            SkinManager.EnableFormSkins();
+            Application.Run(new frmPhieuMuaHang());
         }
     }
 }

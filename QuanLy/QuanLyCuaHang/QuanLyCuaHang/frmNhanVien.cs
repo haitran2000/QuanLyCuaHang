@@ -176,6 +176,11 @@ namespace QuanLyCuaHang
             btnXoa.Enabled = true;
         }
 
+        private void dataGridViewNhanVien_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+
+        }
+
 
     }
 }

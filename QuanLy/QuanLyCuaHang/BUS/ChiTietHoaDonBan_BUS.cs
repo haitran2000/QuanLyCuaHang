@@ -14,5 +14,29 @@ namespace BUS
         {
             return objCTHDB_DAO.LayDanhSach();
         }
+        public List<ChiTietHoaDonBan_DTO> LayDanhSachTheoMa(string maHDB)
+        {
+            return objCTHDB_DAO.LayDanhSachTheoMa(maHDB);
+        }
+        public string TongTienHoaDon(string maHDB)
+        {
+            return objCTHDB_DAO.TongTienHoaDon(maHDB);
+        }
+        public void XoaCTHDB(string maHDB)
+        {
+            objCTHDB_DAO.XoaCTHDB(maHDB);
+        }
+        public void ThemCTHDB(ChiTietHoaDonBan_DTO cTHDB_DTO)
+        {
+            objCTHDB_DAO.ThemCTHDB(cTHDB_DTO);
+        }
+        public void CapNhatCTHDB(int soLuong, long thanhTien, string maHDB, string maHH)
+        {
+            objCTHDB_DAO.CapNhatCTHDB(soLuong, thanhTien, maHDB, maHH);
+        }
+        public bool checkCTHDB(string maHDB, string maHH)
+        {
+            return objCTHDB_DAO.checkCTHDB(maHDB, maHH);
+        }
     }
 }

@@ -50,6 +50,7 @@
     <Compile Include="HangHoa_BUS.cs" />
     <Compile Include="HoaDonBan_BUS.cs" />
     <Compile Include="HoaDonNhap_BUS.cs" />
+    <Compile Include="KhachHang_BUS.cs" />
     <Compile Include="LoaiHang_BUS.cs" />
     <Compile Include="NhaCungCap_BUS.cs" />
     <Compile Include="NhanVien_BUS.cs" />

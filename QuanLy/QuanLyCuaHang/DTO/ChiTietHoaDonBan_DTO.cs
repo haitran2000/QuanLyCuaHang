@@ -23,6 +23,19 @@ namespace DTO
             set { maHH = value; }
         }
         private int soLuong;
+        private double donGia;
+        private string tenHH;
+
+        public string TenHH
+        {
+            get { return tenHH; }
+            set { tenHH = value; }
+        }
+        public double DonGia
+        {
+            get { return donGia; }
+            set { donGia = value; }
+        }
 
         public int SoLuong
         {

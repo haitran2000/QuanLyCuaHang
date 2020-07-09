@@ -52,5 +52,59 @@ namespace DAO
             }
             return dsHDB;
         }
+        public void ThemHDB(HoaDonBan_DTO hDB_DTO)
+        {
+            // 1. Tạo đối tượng kết nối
+            SqlConnection conn = DataProvider.TaoKetNoi();
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.CommandText = string.Format("INSERT [dbo].[HOADONBAN](MAHDB ,MANV,NGAYBAN,MAKH,TONGTIEN) VALUES('{0}','{1}','{2}','{3}','{4}') ", hDB_DTO.MaHDB,hDB_DTO.MaNV,hDB_DTO.NgayBan.ToString(),hDB_DTO.MaKH,hDB_DTO.TongTien);
+                cmd.Connection = conn;
+                // 4. thực thi cmd và xử lý kết quả
+                cmd.ExecuteNonQuery();
+
+            }
+            finally
+            {
+                // 5. đóng kết nối
+                conn.Close();
+
+            }
+        }
+        public bool CheckMaHDB(string maHDB)
+        {
+            SqlConnection conn = DataProvider.TaoKetNoi();
+            try
+            {
+                // 3. tạo đối tượng command
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.CommandText = string.Format("SELECT MAHDB FROM [dbo].[HOADONBAN] WHERE MAHDB ='{0}'", maHDB);
+                cmd.Connection = conn;
+                // 4. thực thi cmd và xử lý kết quả
+                SqlDataReader reader = cmd.ExecuteReader();
+                int value = 0;
+                if (reader.Read())
+                {
+                    if ((maHDB == reader.GetString(0).Trim()))
+                    {
+                        value = 1;
+                    }
+                }
+                if (value == 1)
+                    return true;
+                else
+                    return false;
+
+            }
+
+            finally
+            {
+                // 5. đóng kết nối
+                conn.Close();
+            }
+        }
     }
 }

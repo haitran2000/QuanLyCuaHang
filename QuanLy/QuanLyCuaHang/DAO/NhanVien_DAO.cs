@@ -66,7 +66,7 @@ namespace DAO
                 SqlCommand cmd = new SqlCommand();
                 //"DELETE FROM FC WHERE FCName = 'Chelsea'"
 
-                cmd.CommandText = string.Format("UPDATE [dbo].[NHANVIEN] SET TRANGTHAI = 0 WHERE MANV = '{0}'", maNV);
+                cmd.CommandText = string.Format("EXEC sp_XoaNhanVien '{0}'", maNV);
                 cmd.Connection = conn;
                 // 4. thực thi cmd và xử lý kết quả
                 cmd.ExecuteNonQuery();
@@ -89,7 +89,7 @@ namespace DAO
                 SqlCommand cmd = new SqlCommand();
                 //"DELETE FROM FC WHERE FCName = 'Chelsea'"
 
-                cmd.CommandText = string.Format("UPDATE [dbo].[NHANVIEN] SET TENNV=N'{0}' ,GIOITINH=N'{1}', NGAYSINH='{2}',SDT='{3}',DIACHI=N'{4}',QUEQUAN=N'{5}' WHERE MANV =N'{6}'", tenNV, gioiTinh, ngaySinh.ToString("MM/dd/yyyy h:mm:ss tt"), sDT, diaChi, queQuan, maNV);
+                cmd.CommandText = string.Format("EXEC sp_CapNhatNhanVien N'{0}',N'{1}','{2}','{3}',N'{4}',N'{5}','{6}'", tenNV, gioiTinh, ngaySinh.ToString("MM/dd/yyyy h:mm:ss tt"), sDT, diaChi, queQuan, maNV);
                 cmd.Connection = conn;
                 // 4. thực thi cmd và xử lý kết quả
                 cmd.ExecuteNonQuery();
@@ -112,7 +112,7 @@ namespace DAO
                 SqlCommand cmd = new SqlCommand();
                 //"DELETE FROM FC WHERE FCName = 'Chelsea'"
 
-                cmd.CommandText = string.Format("INSERT [dbo].[NHANVIEN](MANV,TENNV,GIOITINH,NGAYSINH,SDT,DIACHI,QUEQUAN) VALUES('{0}',N'{1}',N'{2}','{3}','{4}',N'{5}',N'{6}') " ,maNV, tenNV, gioiTinh, ngaySinh.ToString("MM/dd/yyyy h:mm:ss tt"), sDT, diaChi, queQuan);
+                cmd.CommandText = string.Format(" EXEC sp_ThemNhanVien '{0}',N'{1}',N'{2}','{3}','{4}',N'{5}',N'{6}'", maNV, tenNV, gioiTinh, ngaySinh.ToString("MM/dd/yyyy h:mm:ss tt"), sDT, diaChi, queQuan);
                 cmd.Connection = conn;
                 // 4. thực thi cmd và xử lý kết quả
                 cmd.ExecuteNonQuery();

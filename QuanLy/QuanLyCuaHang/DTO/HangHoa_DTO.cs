@@ -14,8 +14,8 @@ namespace DTO
         private string maLoaiHH;
         private string maNCC;
         private int soLuong;
-        private double donGiaNhap;
-        private double donGiaBan;
+        private long donGiaNhap;
+        private long donGiaBan;
         public string TenHH
         {
             get { return tenHH; }
@@ -26,12 +26,12 @@ namespace DTO
             get { return soLuong; }
             set { soLuong = value; }
         }
-        public double DonGiaNhap
+        public long DonGiaNhap
         {
             get { return donGiaNhap; }
             set { donGiaNhap = value; }
         }
-        public double DonGiaBan
+        public long DonGiaBan
         {
             get { return donGiaBan; }
             set { donGiaBan = value; }
@@ -55,7 +55,7 @@ namespace DTO
         public HangHoa_DTO()
         {
         }
-        public HangHoa_DTO(string _maHH,string _tenHH,int _soLuong,double _donGiaNhap,double _donGiaBan,string _maLoaiHH,string _maNCC)
+        public HangHoa_DTO(string _maHH,string _tenHH,int _soLuong,long _donGiaNhap,long _donGiaBan,string _maLoaiHH,string _maNCC)
         {
             this.maHH = _maHH;
             this.tenHH = _tenHH;

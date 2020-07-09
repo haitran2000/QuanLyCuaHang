@@ -51,6 +51,7 @@
     <Compile Include="HangHoa_DTO.cs" />
     <Compile Include="HoaDonBan_DTO.cs" />
     <Compile Include="HoaDonNhap_DTO.cs" />
+    <Compile Include="KhachHang_DTO.cs" />
     <Compile Include="LoaiHang_DTO.cs" />
     <Compile Include="NhaCungCap_DTO.cs" />
     <Compile Include="NhanVien_DTO.cs" />
@@ -60,7 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

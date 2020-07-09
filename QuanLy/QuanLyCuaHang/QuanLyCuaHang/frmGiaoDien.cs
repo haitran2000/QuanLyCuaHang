@@ -15,7 +15,6 @@ namespace QuanLyCuaHang
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
-            WindowState = FormWindowState.Maximized;
         }
 
         private void GiaoDien_Load(object sender, EventArgs e)
@@ -36,6 +35,9 @@ namespace QuanLyCuaHang
             frmNhanVien nhanVien = new frmNhanVien();
             nhanVien.MdiParent = this;
             nhanVien.Show();
+            nhanVien.WindowState = FormWindowState.Maximized;
+            tabControl1.Hide();
+            tabControl1.Show();
         }
 
         private void btnDoiMatKhau_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -92,6 +94,37 @@ namespace QuanLyCuaHang
             frmLoaiHang frmLH = new frmLoaiHang();
             frmLH.MdiParent = this;
             frmLH.Show();
+        }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void taoHoaDonBan_Click(object sender, EventArgs e)
+        {
+            frmPhieuMuaHang frm = new frmPhieuMuaHang();
+            frm.Show();
+        }
+        
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            e.DrawBackground();
+            Graphics g = e.Graphics;
+
+            Font drawFont = new Font("Arial", 9);
+
+            g.FillRectangle(new SolidBrush(Color.Silver), e.Bounds);
+
+            e.Graphics.DrawString("AS", drawFont, new SolidBrush(Color.FromArgb(0xFF, 0x00, 0x33)), e.Bounds.Right+8,e.Bounds.Top + 4);
+
+            e.Graphics.DrawString(this.tabControl1.TabPages[e.Index].Text, e.Font, Brushes.White, e.Bounds.Left + 1, e.Bounds.Top + 4);
+            e.DrawFocusRectangle();
         }
     }
 }

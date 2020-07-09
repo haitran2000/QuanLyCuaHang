@@ -36,9 +36,9 @@ namespace DAO
                     if (!dr.IsDBNull(2))
                         hH.SoLuong = (int)dr[2];
                     if (!dr.IsDBNull(3))
-                        hH.DonGiaNhap = double.Parse(dr[3].ToString());
+                        hH.DonGiaNhap = long.Parse(dr[3].ToString());
                     if (!dr.IsDBNull(4))
-                        hH.DonGiaBan = double.Parse(dr[4].ToString());
+                        hH.DonGiaBan = long.Parse(dr[4].ToString());
                     if (!dr.IsDBNull(5))
                         hH.MaLoaiHH = (string)dr[5];
                     if (!dr.IsDBNull(6))
@@ -124,6 +124,52 @@ namespace DAO
                 conn.Close();
 
             }
+        }
+        public List<HangHoa_DTO> LayDanhSachTheoMa(string maHH)
+        {
+            List<HangHoa_DTO> dsHH = new List<HangHoa_DTO>();
+            // 1. Tạo đối tượng kết nối
+            SqlConnection conn = DataProvider.TaoKetNoi();
+            SqlDataReader dr = null;
+            try
+            {
+                // 2. mở kết nối
+                // 3. tạo đối tượng command
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = "SELECT * FROM [dbo].[HANGHOA] WHERE TRANGTHAI = 1 AND MAHH='"+maHH+"'";
+                cmd.Connection = conn;
+                // 4. thực thi cmd và xử lý kết quả
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    HangHoa_DTO hH = new HangHoa_DTO();
+                    // đọc từng dòng dữ liệu
+                    if (!dr.IsDBNull(0))
+                        hH.MaHH = (string)dr[0];
+                    if (!dr.IsDBNull(1))
+                        hH.TenHH = (string)dr[1];
+                    if (!dr.IsDBNull(2))
+                        hH.SoLuong = (int)dr[2];
+                    if (!dr.IsDBNull(3))
+                        hH.DonGiaNhap = long.Parse(dr[3].ToString());
+                    if (!dr.IsDBNull(4))
+                        hH.DonGiaBan = long.Parse(dr[4].ToString());
+                    if (!dr.IsDBNull(5))
+                        hH.MaLoaiHH = (string)dr[5];
+                    if (!dr.IsDBNull(6))
+                        hH.MaNCC = (string)dr[6];
+                    if (!dr.IsDBNull(7))
+                        dsHH.Add(hH);
+                }
+
+            }
+            finally
+            {
+                dr.Close();
+                // 5. đóng kết nối
+                conn.Close();
+            }
+            return dsHH;
         }
     }
 }

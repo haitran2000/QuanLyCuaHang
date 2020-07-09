@@ -87,5 +87,36 @@ namespace DAO
                 conn.Close();
             }
         }
+        public bool DangNhap(string taiKhoan, string matKhau)
+        {
+            // 1. Tạo đối tượng kết nối
+            SqlConnection conn = DataProvider.TaoKetNoi();
+            try
+            {
+                // 3. tạo đối tượng command
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = string.Format("SELECT TAIKHOAN, MATKHAU FROM TAIKHOAN WHERE TRANGTHAI=1 AND TAIKHOAN='{0}'",taiKhoan);
+                cmd.Connection = conn;
+                // 4. thực thi cmd và xử lý kết quả
+                SqlDataReader reader= cmd.ExecuteReader();
+                int value = 0;
+                if (reader.Read())
+                {
+                    if ((taiKhoan == reader.GetString(0).Trim()) && (matKhau == reader.GetString(1).Trim()))
+                    {
+                        value = 1;
+                    }
+                }
+                if (value == 1)
+                    return true;
+                else
+                    return false;
+            }
+            finally
+            {
+                // 5. đóng kết nối
+                conn.Close();
+            }
+        }
     }
 }

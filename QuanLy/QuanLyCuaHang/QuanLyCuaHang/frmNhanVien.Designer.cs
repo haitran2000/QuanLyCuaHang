@@ -151,6 +151,7 @@
             this.dataGridViewNhanVien.ReadOnly = true;
             this.dataGridViewNhanVien.Size = new System.Drawing.Size(1284, 348);
             this.dataGridViewNhanVien.TabIndex = 16;
+            this.dataGridViewNhanVien.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridViewNhanVien_RowPostPaint);
             this.dataGridViewNhanVien.SelectionChanged += new System.EventHandler(this.dataGridViewNhanVien_SelectionChanged);
             // 
             // groupControl1
@@ -482,6 +483,7 @@
             this.Controls.Add(this.groupControl1);
             this.Name = "frmNhanVien";
             this.Text = "frmNhanViencs";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.frmNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();

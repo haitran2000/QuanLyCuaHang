@@ -49,8 +49,11 @@
             this.barButtonItemNgonNGu = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemDangKy = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemPhanQuyen = new DevExpress.XtraBars.BarButtonItem();
+            this.skinRibbonGalleryBarItem3 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageHeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupTaiKhoan = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.skin = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageQuanLy = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupNhanVien = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupHoaDon = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -65,7 +68,24 @@
             this.ribbonPageGroupTKHangHoa = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageCaiDat = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupNgonNgu = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.skinRibbonGalleryBarItem2 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.taoHoaDonBan = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -92,9 +112,11 @@
             this.barButtonItemTKLoaiHang,
             this.barButtonItemNgonNGu,
             this.barButtonItemDangKy,
-            this.barButtonItemPhanQuyen});
+            this.barButtonItemPhanQuyen,
+            this.skinRibbonGalleryBarItem3,
+            this.barButtonItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 24;
+            this.ribbonControl1.MaxItemId = 28;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPageHeThong,
@@ -103,7 +125,7 @@
             this.ribbonPageTimKiem,
             this.ribbonPageCaiDat});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
-            this.ribbonControl1.Size = new System.Drawing.Size(1376, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(1071, 143);
             // 
             // btnDangXuat
             // 
@@ -233,6 +255,8 @@
             // 
             // barButtonItemNgonNGu
             // 
+            this.barButtonItemNgonNGu.ActAsDropDown = true;
+            this.barButtonItemNgonNGu.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barButtonItemNgonNGu.Caption = "Chuyển Đổi Ngôn Ngữ";
             this.barButtonItemNgonNGu.Id = 21;
             this.barButtonItemNgonNGu.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemNgonNGu.LargeGlyph")));
@@ -257,10 +281,24 @@
             this.barButtonItemPhanQuyen.Name = "barButtonItemPhanQuyen";
             this.barButtonItemPhanQuyen.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemPhanQuyen_ItemClick);
             // 
+            // skinRibbonGalleryBarItem3
+            // 
+            this.skinRibbonGalleryBarItem3.Caption = "skinRibbonGalleryBarItem3";
+            this.skinRibbonGalleryBarItem3.Id = 26;
+            this.skinRibbonGalleryBarItem3.Name = "skinRibbonGalleryBarItem3";
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "barButtonItem1";
+            this.barButtonItem1.Id = 27;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
             // ribbonPageHeThong
             // 
             this.ribbonPageHeThong.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroupTaiKhoan});
+            this.ribbonPageGroupTaiKhoan,
+            this.skin});
             this.ribbonPageHeThong.Name = "ribbonPageHeThong";
             this.ribbonPageHeThong.Text = "Hệ Thống";
             // 
@@ -272,6 +310,12 @@
             this.ribbonPageGroupTaiKhoan.ItemLinks.Add(this.barButtonItemPhanQuyen);
             this.ribbonPageGroupTaiKhoan.Name = "ribbonPageGroupTaiKhoan";
             this.ribbonPageGroupTaiKhoan.Text = "Tài Khoản";
+            // 
+            // skin
+            // 
+            this.skin.ItemLinks.Add(this.skinRibbonGalleryBarItem3);
+            this.skin.Name = "skin";
+            this.skin.Text = "Giao Diện";
             // 
             // ribbonPageQuanLy
             // 
@@ -372,23 +416,126 @@
             this.ribbonPageGroupNgonNgu.Name = "ribbonPageGroupNgonNgu";
             this.ribbonPageGroupNgonNgu.Text = "Ngôn Ngữ";
             // 
+            // skinRibbonGalleryBarItem1
+            // 
+            this.skinRibbonGalleryBarItem1.Caption = "skinRibbonGalleryBarItem1";
+            this.skinRibbonGalleryBarItem1.Id = 25;
+            this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
+            // 
+            // skinRibbonGalleryBarItem2
+            // 
+            this.skinRibbonGalleryBarItem2.Caption = "skinRibbonGalleryBarItem1";
+            this.skinRibbonGalleryBarItem2.Id = 25;
+            this.skinRibbonGalleryBarItem2.Name = "skinRibbonGalleryBarItem2";
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            this.tabControl1.Location = new System.Drawing.Point(3, 147);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1070, 592);
+            this.tabControl1.TabIndex = 5;
+            this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.Silver;
+            this.tabPage2.Controls.Add(this.panelControl2);
+            this.tabPage2.Controls.Add(this.panelControl1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1062, 566);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Truy Cập Nhanh";
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.Controls.Add(this.pictureEdit1);
+            this.panelControl2.Location = new System.Drawing.Point(309, 0);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(750, 559);
+            this.panelControl2.TabIndex = 1;
+            // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
+            this.pictureEdit1.Location = new System.Drawing.Point(0, 0);
+            this.pictureEdit1.MenuManager = this.ribbonControl1;
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Size = new System.Drawing.Size(750, 559);
+            this.pictureEdit1.TabIndex = 0;
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Appearance.BackColor = System.Drawing.Color.White;
+            this.panelControl1.Appearance.Options.UseBackColor = true;
+            this.panelControl1.Controls.Add(this.taoHoaDonBan);
+            this.panelControl1.Controls.Add(this.simpleButton3);
+            this.panelControl1.Controls.Add(this.simpleButton1);
+            this.panelControl1.Location = new System.Drawing.Point(0, 0);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(310, 559);
+            this.panelControl1.TabIndex = 0;
+            // 
+            // taoHoaDonBan
+            // 
+            this.taoHoaDonBan.Image = ((System.Drawing.Image)(resources.GetObject("taoHoaDonBan.Image")));
+            this.taoHoaDonBan.Location = new System.Drawing.Point(1, 115);
+            this.taoHoaDonBan.Name = "taoHoaDonBan";
+            this.taoHoaDonBan.Size = new System.Drawing.Size(309, 101);
+            this.taoHoaDonBan.TabIndex = 4;
+            this.taoHoaDonBan.Text = "Tạo Hóa Đơn Bán";
+            this.taoHoaDonBan.Click += new System.EventHandler(this.taoHoaDonBan_Click);
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.Image")));
+            this.simpleButton3.Location = new System.Drawing.Point(-6, 233);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(310, 94);
+            this.simpleButton3.TabIndex = 3;
+            this.simpleButton3.Text = "Tạo Hóa Đơn Nhập";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(0, 3);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(309, 89);
+            this.simpleButton1.TabIndex = 1;
+            this.simpleButton1.Text = "Danh mục sản phẩm";
+            // 
             // frmGiaoDien
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
-            this.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.Appearance.BackColor = System.Drawing.Color.DarkGray;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1376, 774);
+            this.ClientSize = new System.Drawing.Size(1071, 731);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.InactiveGlowColor = System.Drawing.Color.Olive;
             this.IsMdiContainer = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmGiaoDien";
             this.Ribbon = this.ribbonControl1;
             this.Text = "Quản Lý Cửa Hàng";
             this.Load += new System.EventHandler(this.GiaoDien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,6 +579,19 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupNgonNgu;
         private DevExpress.XtraBars.BarButtonItem barButtonItemDangKy;
         private DevExpress.XtraBars.BarButtonItem barButtonItemPhanQuyen;
+        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem3;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup skin;
+        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
+        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem2;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton taoHoaDonBan;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }
 

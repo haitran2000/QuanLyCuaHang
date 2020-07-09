@@ -15,7 +15,11 @@ namespace BUS
             HangHoa_DAO objHH_DAO = new HangHoa_DAO();
             return objHH_DAO.LayDanhSach();
         }
-        
+        public List<HangHoa_DTO> LayDanhSachTheoMa(string maHH)
+        {
+            HangHoa_DAO objHH_DAO = new HangHoa_DAO();
+            return objHH_DAO.LayDanhSachTheoMa(maHH);
+        }
         public void XoaNV(string maHH)
         {
             // gọi xóa từ DAO
